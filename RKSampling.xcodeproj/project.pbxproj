@@ -12,9 +12,13 @@
 		6C9BF3EA1E34A255000EF06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BF3E81E34A255000EF06C /* Main.storyboard */; };
 		6C9BF3EC1E34A255000EF06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BF3EB1E34A255000EF06C /* Assets.xcassets */; };
 		6C9BF3EF1E34A255000EF06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BF3ED1E34A255000EF06C /* LaunchScreen.storyboard */; };
+		6C9BF3F71E356E6C000EF06C /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BF3F61E356E6C000EF06C /* ConsentDocument.swift */; };
+		6CAD63C01E36751300ACD6A8 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD63BF1E36751300ACD6A8 /* ConsentTask.swift */; };
+		964B8C5B790D764894D71D43 /* Pods_RKSampling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E0C2FBC3766BE0B5DA9FA9 /* Pods_RKSampling.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53E0C2FBC3766BE0B5DA9FA9 /* Pods_RKSampling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKSampling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9BF3E11E34A255000EF06C /* RKSampling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKSampling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9BF3E41E34A255000EF06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9BF3E61E34A255000EF06C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		6C9BF3EB1E34A255000EF06C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C9BF3EE1E34A255000EF06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C9BF3F01E34A255000EF06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C9BF3F61E356E6C000EF06C /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentDocument.swift; path = RKSampling/ConsentDocument.swift; sourceTree = "<group>"; };
+		6CAD63BF1E36751300ACD6A8 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		779E8E5D74F95FC21B4AEC15 /* Pods-RKSampling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKSampling.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKSampling/Pods-RKSampling.release.xcconfig"; sourceTree = "<group>"; };
+		8E0F66B14844F53573C6BF7E /* Pods-RKSampling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKSampling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKSampling/Pods-RKSampling.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964B8C5B790D764894D71D43 /* Pods_RKSampling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		496F31CC384D7C622BA914A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F66B14844F53573C6BF7E /* Pods-RKSampling.debug.xcconfig */,
+				779E8E5D74F95FC21B4AEC15 /* Pods-RKSampling.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6C9BF3D81E34A255000EF06C = {
 			isa = PBXGroup;
 			children = (
 				6C9BF3E31E34A255000EF06C /* RKSampling */,
 				6C9BF3E21E34A255000EF06C /* Products */,
+				496F31CC384D7C622BA914A4 /* Pods */,
+				BA28B81971279DBDCA6DF202 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +80,27 @@
 				6C9BF3EB1E34A255000EF06C /* Assets.xcassets */,
 				6C9BF3ED1E34A255000EF06C /* LaunchScreen.storyboard */,
 				6C9BF3F01E34A255000EF06C /* Info.plist */,
+				6CAD63C11E36751900ACD6A8 /* Consent */,
 			);
 			path = RKSampling;
+			sourceTree = "<group>";
+		};
+		6CAD63C11E36751900ACD6A8 /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD63BF1E36751300ACD6A8 /* ConsentTask.swift */,
+				6C9BF3F61E356E6C000EF06C /* ConsentDocument.swift */,
+			);
+			name = Consent;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BA28B81971279DBDCA6DF202 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53E0C2FBC3766BE0B5DA9FA9 /* Pods_RKSampling.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C9BF3F31E34A255000EF06C /* Build configuration list for PBXNativeTarget "RKSampling" */;
 			buildPhases = (
+				43814F20D33BF62FE748BA95 /* [CP] Check Pods Manifest.lock */,
 				6C9BF3DD1E34A255000EF06C /* Sources */,
 				6C9BF3DE1E34A255000EF06C /* Frameworks */,
 				6C9BF3DF1E34A255000EF06C /* Resources */,
+				FCF51B40B09456D3060A189E /* [CP] Embed Pods Frameworks */,
+				96FDA1CFC4A84253B3CDD036 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +174,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43814F20D33BF62FE748BA95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96FDA1CFC4A84253B3CDD036 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RKSampling/Pods-RKSampling-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF51B40B09456D3060A189E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RKSampling/Pods-RKSampling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C9BF3DD1E34A255000EF06C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6C9BF3E71E34A255000EF06C /* ViewController.swift in Sources */,
+				6CAD63C01E36751300ACD6A8 /* ConsentTask.swift in Sources */,
+				6C9BF3F71E356E6C000EF06C /* ConsentDocument.swift in Sources */,
 				6C9BF3E51E34A255000EF06C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +349,7 @@
 		};
 		6C9BF3F41E34A255000EF06C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E0F66B14844F53573C6BF7E /* Pods-RKSampling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JH979G75UV;
@@ -270,6 +363,7 @@
 		};
 		6C9BF3F51E34A255000EF06C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 779E8E5D74F95FC21B4AEC15 /* Pods-RKSampling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JH979G75UV;
@@ -300,6 +394,7 @@
 				6C9BF3F51E34A255000EF06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
