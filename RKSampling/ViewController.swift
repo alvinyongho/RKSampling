@@ -10,8 +10,11 @@ import UIKit
 import ResearchKit
 
 
-class ViewController: UIViewController {
 
+
+
+class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +31,13 @@ class ViewController: UIViewController {
         // taskRunUUID --> taskRun: nil which means we're not restoring a previous state
         let taskViewController = ORKTaskViewController(task: ConsentTask, taskRun: nil)
         taskViewController.delegate = self
+        present(taskViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func jackItTapped(sender : AnyObject) {
+        let taskViewController = ORKTaskViewController(task: JackItTask, taskRun: nil)
+        taskViewController.delegate = self
+        taskViewController.outputDirectory = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] , isDirectory: true) as URL
         present(taskViewController, animated: true, completion: nil)
     }
     

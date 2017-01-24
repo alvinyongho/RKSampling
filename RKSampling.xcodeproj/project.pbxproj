@@ -14,6 +14,12 @@
 		6C9BF3EF1E34A255000EF06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BF3ED1E34A255000EF06C /* LaunchScreen.storyboard */; };
 		6C9BF3F71E356E6C000EF06C /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BF3F61E356E6C000EF06C /* ConsentDocument.swift */; };
 		6CAD63C01E36751300ACD6A8 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD63BF1E36751300ACD6A8 /* ConsentTask.swift */; };
+		6CAD63C41E36BCEE00ACD6A8 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD63C31E36BCEE00ACD6A8 /* SurveyTask.swift */; };
+		6CAD63C71E370EAD00ACD6A8 /* JackItTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD63C61E370EAD00ACD6A8 /* JackItTask.swift */; };
+		6CAD63CA1E3714A500ACD6A8 /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD63C91E37136800ACD6A8 /* tap.aif */; };
+		6CEEA7F01E371D8E009BD8C8 /* JackItStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEA7EF1E371D8E009BD8C8 /* JackItStep.swift */; };
+		6CEEA7F71E371FBD009BD8C8 /* JackItStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEA7F51E371FBD009BD8C8 /* JackItStepViewController.swift */; };
+		6CEEA7F81E371FBD009BD8C8 /* JackItStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEEA7F61E371FBD009BD8C8 /* JackItStepViewController.xib */; };
 		964B8C5B790D764894D71D43 /* Pods_RKSampling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E0C2FBC3766BE0B5DA9FA9 /* Pods_RKSampling.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +34,12 @@
 		6C9BF3F01E34A255000EF06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C9BF3F61E356E6C000EF06C /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentDocument.swift; path = RKSampling/ConsentDocument.swift; sourceTree = "<group>"; };
 		6CAD63BF1E36751300ACD6A8 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		6CAD63C31E36BCEE00ACD6A8 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		6CAD63C61E370EAD00ACD6A8 /* JackItTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JackItTask.swift; sourceTree = "<group>"; };
+		6CAD63C91E37136800ACD6A8 /* tap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tap.aif; sourceTree = "<group>"; };
+		6CEEA7EF1E371D8E009BD8C8 /* JackItStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JackItStep.swift; sourceTree = "<group>"; };
+		6CEEA7F51E371FBD009BD8C8 /* JackItStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JackItStepViewController.swift; sourceTree = "<group>"; };
+		6CEEA7F61E371FBD009BD8C8 /* JackItStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JackItStepViewController.xib; sourceTree = "<group>"; };
 		779E8E5D74F95FC21B4AEC15 /* Pods-RKSampling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKSampling.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKSampling/Pods-RKSampling.release.xcconfig"; sourceTree = "<group>"; };
 		8E0F66B14844F53573C6BF7E /* Pods-RKSampling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKSampling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKSampling/Pods-RKSampling.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +86,9 @@
 		6C9BF3E31E34A255000EF06C /* RKSampling */ = {
 			isa = PBXGroup;
 			children = (
+				6CAD63C81E37134400ACD6A8 /* Resources */,
+				6CAD63C51E370BF300ACD6A8 /* ActiveTask */,
+				6CAD63C21E36B1CE00ACD6A8 /* Survey */,
 				6C9BF3E41E34A255000EF06C /* AppDelegate.swift */,
 				6C9BF3E61E34A255000EF06C /* ViewController.swift */,
 				6C9BF3E81E34A255000EF06C /* Main.storyboard */,
@@ -93,6 +108,33 @@
 			);
 			name = Consent;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		6CAD63C21E36B1CE00ACD6A8 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD63C31E36BCEE00ACD6A8 /* SurveyTask.swift */,
+			);
+			name = Survey;
+			sourceTree = "<group>";
+		};
+		6CAD63C51E370BF300ACD6A8 /* ActiveTask */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD63C61E370EAD00ACD6A8 /* JackItTask.swift */,
+				6CEEA7EF1E371D8E009BD8C8 /* JackItStep.swift */,
+				6CEEA7F51E371FBD009BD8C8 /* JackItStepViewController.swift */,
+				6CEEA7F61E371FBD009BD8C8 /* JackItStepViewController.xib */,
+			);
+			name = ActiveTask;
+			sourceTree = "<group>";
+		};
+		6CAD63C81E37134400ACD6A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD63C91E37136800ACD6A8 /* tap.aif */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BA28B81971279DBDCA6DF202 /* Frameworks */ = {
@@ -168,7 +210,9 @@
 			files = (
 				6C9BF3EF1E34A255000EF06C /* LaunchScreen.storyboard in Resources */,
 				6C9BF3EC1E34A255000EF06C /* Assets.xcassets in Resources */,
+				6CAD63CA1E3714A500ACD6A8 /* tap.aif in Resources */,
 				6C9BF3EA1E34A255000EF06C /* Main.storyboard in Resources */,
+				6CEEA7F81E371FBD009BD8C8 /* JackItStepViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +273,12 @@
 			files = (
 				6C9BF3E71E34A255000EF06C /* ViewController.swift in Sources */,
 				6CAD63C01E36751300ACD6A8 /* ConsentTask.swift in Sources */,
+				6CEEA7F71E371FBD009BD8C8 /* JackItStepViewController.swift in Sources */,
+				6CAD63C41E36BCEE00ACD6A8 /* SurveyTask.swift in Sources */,
 				6C9BF3F71E356E6C000EF06C /* ConsentDocument.swift in Sources */,
+				6CAD63C71E370EAD00ACD6A8 /* JackItTask.swift in Sources */,
 				6C9BF3E51E34A255000EF06C /* AppDelegate.swift in Sources */,
+				6CEEA7F01E371D8E009BD8C8 /* JackItStep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
