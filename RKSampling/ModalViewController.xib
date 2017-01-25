@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalViewController" customModule="RKSampling" customModuleProvider="target">
+            <connections>
+                <outlet property="countDownLabel" destination="HWu-Ub-6P6" id="gHK-q6-ka2"/>
+                <outlet property="imageIndicator" destination="cfo-UX-qYW" id="gMR-xN-V4O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Reaction Test) When the timer goes GREEN start shaking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZ5-Em-Q2b">
+                    <rect key="frame" x="45" y="121" width="285" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="4fr-Hz-aoS"/>
+                        <constraint firstAttribute="width" constant="285" id="EnY-Lx-v6b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfo-UX-qYW">
+                    <rect key="frame" x="44.5" y="197" width="285" height="118"/>
+                    <color key="backgroundColor" red="0.88182106599999999" green="0.1427143059" blue="0.065611055210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWu-Ub-6P6">
+                    <rect key="frame" x="114" y="239" width="146" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="KdF-Sd-ypj"/>
+                        <constraint firstAttribute="width" constant="146" id="hUJ-hx-x0R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-5O-brt">
+                    <rect key="frame" x="105" y="590" width="165" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="Xaw-ux-nHO"/>
+                        <constraint firstAttribute="width" constant="165" id="nwL-cb-tPS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="Done" backgroundImage="ServicesRowBG"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of shakes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98v-Yw-SM7">
+                    <rect key="frame" x="45" y="405" width="140" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np4-8L-n80">
+                    <rect key="frame" x="288" y="405" width="11" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HWu-Ub-6P6" firstAttribute="centerY" secondItem="cfo-UX-qYW" secondAttribute="centerY" id="HHQ-Ps-Yzf"/>
+                <constraint firstItem="cfo-UX-qYW" firstAttribute="top" secondItem="HZ5-Em-Q2b" secondAttribute="bottom" constant="8" symbolic="YES" id="Hjc-rh-hs2"/>
+                <constraint firstItem="cfo-UX-qYW" firstAttribute="width" secondItem="HZ5-Em-Q2b" secondAttribute="width" id="Riw-h0-CSF"/>
+                <constraint firstItem="HWu-Ub-6P6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rkn-yV-cxx"/>
+                <constraint firstItem="0KR-5O-brt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XEN-bA-fwJ"/>
+                <constraint firstItem="HWu-Ub-6P6" firstAttribute="centerX" secondItem="cfo-UX-qYW" secondAttribute="centerX" id="Xix-hJ-OkA"/>
+                <constraint firstItem="HZ5-Em-Q2b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YcG-DT-wxA"/>
+                <constraint firstItem="HZ5-Em-Q2b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="121" id="agU-es-4g7"/>
+                <constraint firstItem="HWu-Ub-6P6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="byT-I1-KkD"/>
+                <constraint firstAttribute="bottom" secondItem="0KR-5O-brt" secondAttribute="bottom" constant="5" id="gkn-Wh-0BF"/>
+                <constraint firstItem="HWu-Ub-6P6" firstAttribute="top" secondItem="HZ5-Em-Q2b" secondAttribute="bottom" constant="50" id="u8V-ev-jCV"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ServicesRowBG" width="256" height="44"/>
+    </resources>
+</document>

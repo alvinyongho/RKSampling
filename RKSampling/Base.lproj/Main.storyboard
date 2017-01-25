@@ -21,28 +21,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elH-FA-Kzk">
-                                <rect key="frame" x="158" y="369" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Consent"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elH-FA-Kzk">
+                                <rect key="frame" x="59.5" y="138" width="256" height="44"/>
+                                <state key="normal" title="Consent" backgroundImage="ServicesRowBG"/>
                                 <connections>
                                     <action selector="consentTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ruG-Or-SBc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAk-OT-5UO">
-                                <rect key="frame" x="161" y="487" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="JackIt"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAk-OT-5UO">
+                                <rect key="frame" x="59.5" y="236" width="256" height="44"/>
+                                <state key="normal" title="Active Task" backgroundImage="ServicesRowBG"/>
                                 <connections>
                                     <action selector="jackItTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Syt-Ml-pgO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bT-sj-kbu">
+                                <rect key="frame" x="59.5" y="187" width="256" height="44"/>
+                                <state key="normal" title="Survey" backgroundImage="ServicesRowBG"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 main features" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-WJ-pdA">
+                                <rect key="frame" x="53" y="73" width="268" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="9F3-Il-kCy"/>
+                                    <constraint firstAttribute="height" constant="40" id="fam-H9-IRn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="elH-FA-Kzk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0P8-jY-Hsl"/>
+                            <constraint firstItem="HAk-OT-5UO" firstAttribute="top" secondItem="3bT-sj-kbu" secondAttribute="bottom" constant="5" id="C5d-aF-RiP"/>
+                            <constraint firstItem="HAk-OT-5UO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ctt-A8-ENE"/>
+                            <constraint firstItem="eeE-WJ-pdA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="I9I-mE-U3u"/>
+                            <constraint firstItem="3bT-sj-kbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kw7-Kn-YYo"/>
+                            <constraint firstItem="3bT-sj-kbu" firstAttribute="top" secondItem="elH-FA-Kzk" secondAttribute="bottom" constant="5" id="TkZ-gi-smI"/>
+                            <constraint firstItem="eeE-WJ-pdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nBX-mc-sPS"/>
+                            <constraint firstItem="elH-FA-Kzk" firstAttribute="top" secondItem="eeE-WJ-pdA" secondAttribute="bottom" constant="25" id="oaJ-aw-key"/>
+                            <constraint firstItem="eeE-WJ-pdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="opM-WZ-Ctc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ServicesRowBG" width="256" height="44"/>
+    </resources>
 </document>
