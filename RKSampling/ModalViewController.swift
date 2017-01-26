@@ -32,7 +32,7 @@ class ModalViewController: UIViewController {
     
     
     
-    let threshold = 1.80
+    let threshold = 3.80
 
     let manager = CMMotionManager()
 
@@ -94,7 +94,7 @@ class ModalViewController: UIViewController {
                     print("totalAccelInXY: %s", totalAccelInXY)
                     
                     
-                    if( (0.85 < Float(totalAccelInXY)) && (Float(totalAccelInXY) < 3.45)){
+                    if( (0.85 < Float(totalAccelInXY))){
                         x1 = Float(acceleration.x)
                         y1 = Float(acceleration.y)
                         z1 = Float(acceleration.z)
