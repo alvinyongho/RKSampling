@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalViewController" customModule="RKSampling" customModuleProvider="target">
             <connections>
                 <outlet property="countDownLabel" destination="HWu-Ub-6P6" id="gHK-q6-ka2"/>
+                <outlet property="doneButton" destination="0KR-5O-brt" id="Zdi-7t-TXc"/>
                 <outlet property="imageIndicator" destination="cfo-UX-qYW" id="gMR-xN-V4O"/>
                 <outlet property="numShakesCounter" destination="Np4-8L-n80" id="AQM-b3-cPB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -33,11 +34,11 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfo-UX-qYW">
-                    <rect key="frame" x="44.5" y="197" width="285" height="118"/>
+                    <rect key="frame" x="45.5" y="197" width="285" height="118"/>
                     <color key="backgroundColor" red="0.88182106599999999" green="0.1427143059" blue="0.065611055210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWu-Ub-6P6">
-                    <rect key="frame" x="114" y="239" width="146" height="34"/>
+                    <rect key="frame" x="114.5" y="239" width="146" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="KdF-Sd-ypj"/>
                         <constraint firstAttribute="width" constant="146" id="hUJ-hx-x0R"/>
@@ -46,7 +47,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-5O-brt">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-5O-brt">
                     <rect key="frame" x="105" y="590" width="165" height="72"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="72" id="Xaw-ux-nHO"/>

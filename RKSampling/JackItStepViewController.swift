@@ -128,7 +128,7 @@ class JackItStepViewController: ORKActiveStepViewController {
             
         shakeItInstructions.frame = CGRect(x: 0, y: 0, width: 300, height: 120)
         shakeItInstructions.numberOfLines = 2
-        shakeItInstructions.text = "Shake the phone as fast as you can for 10 seconds. "
+        shakeItInstructions.text = "Select the shake it button follow the next insructions. "
         
         self.customView?.addSubview(shakeItInstructions)
         

@@ -27,6 +27,7 @@ class ModalViewController: UIViewController {
 
     @IBOutlet var numShakesCounter: UILabel!
     
+    @IBOutlet var doneButton: UIButton!
     var count = 15
     
     
@@ -137,6 +138,8 @@ class ModalViewController: UIViewController {
             SystemSoundID.playFileNamed(fileName: "horse", withExtenstion: "mp3")
                 playedhorse = true
             }
+            
+            doneButton.isHidden = false
         }
     }
     var playedhorse = false
