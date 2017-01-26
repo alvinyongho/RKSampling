@@ -11,6 +11,10 @@
 		6C6C9CED1E387A440074989A /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6C9CEB1E387A440074989A /* ModalViewController.xib */; };
 		6C790B571E37C13000B1C79E /* JackItStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C790B561E37C13000B1C79E /* JackItStepView.swift */; };
 		6C790B5B1E37E0C900B1C79E /* JackItStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C790B5A1E37E0C900B1C79E /* JackItStepView.xib */; };
+		6C8BBD5A1E39A911009D2FCF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8BBD591E39A911009D2FCF /* CoreMotion.framework */; };
+		6C8BBD5C1E39C07A009D2FCF /* bellsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C8BBD5B1E39C07A009D2FCF /* bellsound.mp3 */; settings = {ASSET_TAGS = (bellsound, ); }; };
+		6C8BBD5E1E39CB13009D2FCF /* bellsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C8BBD5D1E39CB13009D2FCF /* bellsound.mp3 */; };
+		6C8BBD601E39CD02009D2FCF /* horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C8BBD5F1E39CD02009D2FCF /* horse.mp3 */; };
 		6C9BF3E51E34A255000EF06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BF3E41E34A255000EF06C /* AppDelegate.swift */; };
 		6C9BF3E71E34A255000EF06C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BF3E61E34A255000EF06C /* ViewController.swift */; };
 		6C9BF3EA1E34A255000EF06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BF3E81E34A255000EF06C /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		6C6C9CEB1E387A440074989A /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 		6C790B561E37C13000B1C79E /* JackItStepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JackItStepView.swift; sourceTree = "<group>"; };
 		6C790B5A1E37E0C900B1C79E /* JackItStepView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JackItStepView.xib; sourceTree = "<group>"; };
+		6C8BBD591E39A911009D2FCF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6C8BBD5B1E39C07A009D2FCF /* bellsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bellsound.mp3; path = ../Downloads/bellsound.mp3; sourceTree = "<group>"; };
+		6C8BBD5D1E39CB13009D2FCF /* bellsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bellsound.mp3; path = ../Downloads/bellsound.mp3; sourceTree = "<group>"; };
+		6C8BBD5F1E39CD02009D2FCF /* horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = horse.mp3; path = ../Downloads/horse.mp3; sourceTree = "<group>"; };
 		6C9BF3E11E34A255000EF06C /* RKSampling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKSampling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9BF3E41E34A255000EF06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9BF3E61E34A255000EF06C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8BBD5A1E39A911009D2FCF /* CoreMotion.framework in Frameworks */,
 				964B8C5B790D764894D71D43 /* Pods_RKSampling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +83,9 @@
 		6C9BF3D81E34A255000EF06C = {
 			isa = PBXGroup;
 			children = (
+				6C8BBD5B1E39C07A009D2FCF /* bellsound.mp3 */,
+				6C8BBD5F1E39CD02009D2FCF /* horse.mp3 */,
+				6C8BBD5D1E39CB13009D2FCF /* bellsound.mp3 */,
 				6C9BF3E31E34A255000EF06C /* RKSampling */,
 				6C9BF3E21E34A255000EF06C /* Products */,
 				496F31CC384D7C622BA914A4 /* Pods */,
@@ -149,6 +161,7 @@
 		BA28B81971279DBDCA6DF202 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C8BBD591E39A911009D2FCF /* CoreMotion.framework */,
 				53E0C2FBC3766BE0B5DA9FA9 /* Pods_RKSampling.framework */,
 			);
 			name = Frameworks;
@@ -183,6 +196,9 @@
 		6C9BF3D91E34A255000EF06C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					bellsound,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Alvin Ho";
@@ -218,8 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C9BF3EF1E34A255000EF06C /* LaunchScreen.storyboard in Resources */,
+				6C8BBD601E39CD02009D2FCF /* horse.mp3 in Resources */,
 				6C9BF3EC1E34A255000EF06C /* Assets.xcassets in Resources */,
 				6C6C9CED1E387A440074989A /* ModalViewController.xib in Resources */,
+				6C8BBD5E1E39CB13009D2FCF /* bellsound.mp3 in Resources */,
+				6C8BBD5C1E39C07A009D2FCF /* bellsound.mp3 in Resources */,
 				6CAD63CA1E3714A500ACD6A8 /* tap.aif in Resources */,
 				6C790B5B1E37E0C900B1C79E /* JackItStepView.xib in Resources */,
 				6C9BF3EA1E34A255000EF06C /* Main.storyboard in Resources */,
@@ -412,6 +431,7 @@
 			baseConfigurationReference = 8E0F66B14844F53573C6BF7E /* Pods-RKSampling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COCOAPODS_PARALLEL_CODE_SIGN = true;
 				DEVELOPMENT_TEAM = JH979G75UV;
 				INFOPLIST_FILE = RKSampling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,6 +446,7 @@
 			baseConfigurationReference = 779E8E5D74F95FC21B4AEC15 /* Pods-RKSampling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COCOAPODS_PARALLEL_CODE_SIGN = true;
 				DEVELOPMENT_TEAM = JH979G75UV;
 				INFOPLIST_FILE = RKSampling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

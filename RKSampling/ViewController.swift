@@ -33,6 +33,11 @@ class ViewController: UIViewController {
         taskViewController.delegate = self
         present(taskViewController, animated: true, completion: nil)
     }
+    @IBAction func surveyTapped(_ sender: Any) {
+        let taskViewController = ORKTaskViewController(task: SurveyTask, taskRun: nil)
+        taskViewController.delegate = self
+        present(taskViewController, animated: true, completion: nil)
+    }
     
     @IBAction func jackItTapped(sender : AnyObject) {
         let taskViewController = ORKTaskViewController(task: JackItTask, taskRun: nil)

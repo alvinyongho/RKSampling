@@ -79,7 +79,8 @@ class JackItStepViewController: ORKActiveStepViewController {
             }
         }
     }
-//
+    
+    
     func enableNextButton(){ // hack to remove button
         for subview in self.view.subviews {
             for subview1 in subview.subviews {
@@ -93,6 +94,7 @@ class JackItStepViewController: ORKActiveStepViewController {
                 }
             }
         }
+        self.customView?.isHidden = true
     }
     
     
@@ -165,6 +167,10 @@ class JackItStepViewController: ORKActiveStepViewController {
         super.viewDidLoad()
         
         disableNextButton()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.enableNextButton), name: NSNotification.Name(rawValue: "DoUpdateButton"), object: nil)
+        
+        
         //initializeStorboardVC();
         
         self.view.backgroundColor = UIColor(red:1.0, green:1.0, blue:1.0, alpha:1.0)

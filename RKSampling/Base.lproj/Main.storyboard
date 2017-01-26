@@ -38,6 +38,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bT-sj-kbu">
                                 <rect key="frame" x="59.5" y="187" width="256" height="44"/>
                                 <state key="normal" title="Survey" backgroundImage="ServicesRowBG"/>
+                                <connections>
+                                    <action selector="surveyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4Z-Pl-nsT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 main features" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-WJ-pdA">
                                 <rect key="frame" x="53" y="73" width="268" height="40"/>

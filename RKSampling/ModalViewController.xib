@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="countDownLabel" destination="HWu-Ub-6P6" id="gHK-q6-ka2"/>
                 <outlet property="imageIndicator" destination="cfo-UX-qYW" id="gMR-xN-V4O"/>
+                <outlet property="numShakesCounter" destination="Np4-8L-n80" id="AQM-b3-cPB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -53,6 +54,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <state key="normal" title="Done" backgroundImage="ServicesRowBG"/>
+                    <connections>
+                        <action selector="donePressed:" destination="-1" eventType="touchUpInside" id="h6m-ij-WR9"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of shakes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98v-Yw-SM7">
                     <rect key="frame" x="45" y="405" width="140" height="21"/>
@@ -62,7 +66,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np4-8L-n80">
-                    <rect key="frame" x="288" y="405" width="11" height="21"/>
+                    <rect key="frame" x="253" y="405" width="46" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
